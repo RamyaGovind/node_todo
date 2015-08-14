@@ -39,6 +39,7 @@ module.exports = function(app) {
 	});
 
 	// delete a todo
+	//
 	app.delete('/api/todos/:todo_id', function(req, res) {
 		Todo.remove({
 			_id : req.params.todo_id
